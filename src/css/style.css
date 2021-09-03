@@ -185,14 +185,14 @@ body {
   margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
-  background-image: url(/img/fon-1.jpg);
+  background-image: url(img/fon-1.jpg);
   background-repeat: no-repeat;
   height: 1000px;
 }
 
 .title-man {
   align-self: flex-end;
-  background-image: url(/img/man.png);
+  background-image: url(img/man.png);
   background-repeat: no-repeat;
   width: 826px;
   height: 917px;
@@ -201,7 +201,7 @@ body {
 }
 
 .title-bottom-shadow {
-  background-image: url(/img/shadow.png);
+  background-image: url(img/shadow.png);
   width: 1920px;
   height: 40px;
   position: absolute;
@@ -310,7 +310,7 @@ body {
 
 .about-img {
   display: inline-block;
-  background-image: url(/img/photo-2.jpg);
+  background-image: url(img/photo-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
@@ -349,7 +349,7 @@ body {
   line-height: 1;
   color: #6f707e;
   background-color: transparent;
-  background-image: url(/img/download.png);
+  background-image: url(img/download.png);
   background-repeat: no-repeat;
   background-position: 5% center;
   transition: all 0.4s;
@@ -365,7 +365,7 @@ body {
 .container-do {
   padding: 100px 0;
   margin-bottom: 100px;
-  background-image: url(/img/fon-2.jpg);
+  background-image: url(img/fon-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -573,7 +573,7 @@ body {
 .container-statistics {
   padding: 100px 0;
   margin-bottom: 100px;
-  background-image: url(/img/fon-3.jpg);
+  background-image: url(img/fon-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -637,7 +637,7 @@ body {
 
 .comment-img {
   display: inline-block;
-  background-image: url(/img/photo-3.jpg);
+  background-image: url(img/photo-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100px;
@@ -686,7 +686,7 @@ body {
 
 .container-footer {
   padding: 100px 0 65px 0;
-  background-image: url(/img/fon-4.jpg);
+  background-image: url(img/fon-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -746,19 +746,19 @@ body {
 }
 
 .footer-item-img-geo {
-  background-image: url(/img/geo.png);
+  background-image: url(img/geo.png);
   width: 18px;
   height: 26px;
 }
 
 .footer-item-img-mail {
-  background-image: url(/img/mail.png);
+  background-image: url(img/mail.png);
   width: 29px;
   height: 24px;
 }
 
 .footer-item-img-phone {
-  background-image: url(/img/phone.png);
+  background-image: url(img/phone.png);
   width: 24px;
   height: 24px;
 }
@@ -860,37 +860,37 @@ body {
 
 
 .footer-social-img-facebook {
-  background-image: url(/img/facebook.png);
+  background-image: url(img/facebook.png);
   width: 16px;
   height: 29px;
 }
 
 .footer-social-img-twitter {
-  background-image: url(/img/twitter.png);
+  background-image: url(img/twitter.png);
   width: 25px;
   height: 23px;
 }
 
 .footer-social-img-ball {
-  background-image: url(/img/ball.png);
+  background-image: url(img/ball.png);
   width: 27px;
   height: 27px;
 }
 
 .footer-social-img-cat {
-  background-image: url(/img/cat.png);
+  background-image: url(img/cat.png);
   width: 27px;
   height: 27px;
 }
 
 .footer-social-img-instagram {
-  background-image: url(/img/instagram.png);
+  background-image: url(img/instagram.png);
   width: 27px;
   height: 27px;
 }
 
 .footer-social-img-in {
-  background-image: url(/img/in.png);
+  background-image: url(img/in.png);
   width: 27px;
   height: 26px;
 }
