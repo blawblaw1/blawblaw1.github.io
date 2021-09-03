@@ -7,41 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animate.css">
   <title>Андрей Браун - Веб-разработчик</title>
 </head>
 
 <body>
 
+ <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+
   <header class="header">
     <div class="container-header">
       <nav class="nav-header">
         <div class="header-top">
-        <div class="nav-logo">
-          Андрей Браун
+          <div class="nav-logo">
+            <a href="#" class="nav-logo-link">Андрей Браун</a>
+          </div>
+          <div class="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#about" class="nav-item-link">
+                  Обо мне
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-item-link">
+                  Услуги
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#case" class="nav-item-link">
+                  Кейсы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#calculation" class="nav-item-link">
+                  Прайс
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#comment" class="nav-item-link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="nav-item-link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              Обо мне
-            </li>
-            <li class="nav-item">
-              Услуги
-            </li>
-            <li class="nav-item">
-              Кейсы
-            </li>
-            <li class="nav-item">
-              Прайс
-            </li>
-            <li class="nav-item">
-              Отзывы
-            </li>
-            <li class="nav-item">
-              Контакты
-            </li>
-          </ul>
-        </div>
-      </div>
       </nav>
     </div>
   </header>
@@ -50,28 +70,27 @@
     <section class="section-title">
       <div class="container-title">
         <div class="title-left">
-        <h1 class="title">
-          Привет<span>Я Андрей Браун</span>
-        </h1>
-        <h4 class="title-description">
-          Фулл стек веб-разработчик
-        </h4>
-        <input type="submit" value="Обо мне" class="title-input">
-        <input type="submit" value="Мои работы" class="title-input">
-      </div >
-      <div class="title-man">
+          <h1 class="title">
+            Привет<span>Я Андрей Браун</span>
+          </h1>
+          <h4 class="title-description">
+            Фулл стек веб-разработчик
+          </h4>
+          <input type="button" value="Обо мне" class="title-input">
+          <input type="button" value="Мои работы" class="title-input">
+        </div>
+        <div class="title-man">
+        </div>
+        <div class="title-bottom-shadow">
+        </div>
       </div>
-      <div class="title-bottom-shadow">
-      </div>
-    </div>
     </section>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="container-about">
         <h2 class="heading-about">
           Обо мне
-          <span class="border-top"></span>
         </h2>
-        <img src="/img/photo-2.jpg" alt="photo" class="about-img">
+        <div class="about-img"></div>
         <p class="about-description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores qui doloribus officia non deserunt similique
           earum pariatur eveniet! Fuga deleniti similique quam animi.
@@ -80,14 +99,13 @@
             dolore. Ea, ex rem explicabo omnis.
           </span>
         </p>
-        <input type="submit" value="Скачать резюме" class="about-input">
+        <input type="button" value="Скачать резюме" class="about-input">
       </div>
     </section>
-    <section class="section-do">
+    <section class="section-do" id="services">
       <div class="container-do">
         <h2 class="do-heading">
           Что я умею
-          <span class="border-bottom"></span>
         </h2>
         <ul class="do-list">
           <li class="do-item">
@@ -129,11 +147,10 @@
         </ul>
       </div>
     </section>
-    <section class="section-case">
+    <section class="section-case" id="case">
       <div class="container-case">
         <h2 class="case-heading">
           Кейсы
-          <span class="do-border-bottom"></span>
         </h2>
         <p class="case-heading-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur itaque nesciunt, voluptate non, dolorem
@@ -142,50 +159,51 @@
         <img src="/img/img-opencloud.jpg" alt="site-opencloud">
       </div>
     </section>
-    <section class="section-calculation">
+    <section class="section-calculation" id="calculation">
       <div class="container-calculation">
         <h2 class="calculation-heading">
           Расчет стоимости
         </h2>
         <ul class="calculation-list">
           <li class="calculation-item">
-            <h3 class="calculation-item-caption">
+            <label for="site-type" class="calculation-item-caption">
               Тип сайта
-            </h3>
-            <select name="list" class="calculation-item-choose" required>
+            </label>
+            <select id="site-type" name="list" class="calculation-item-choose" required>
               <option selected disabled>Выбирите пункт...</option>
             </select>
           </li>
           <li class="calculation-item">
-            <h3 class="calculation-item-caption">
+            <label for="design" class="calculation-item-caption">
               Дизайн
-            </h3>
-            <select name="list" class="calculation-item-choose" required>
+            </label>
+            <select id="design" name="list" class="calculation-item-choose" required>
               <option selected disabled>Выбирите пункт...</option>
             </select>
           </li>
           <li class="calculation-item">
-            <h3 class="calculation-item-caption">
+            <label for="adaptability" class="calculation-item-caption" >
               Адаптивность
-            </h3>
-            <select name="list" class="calculation-item-choose" required>
+            </label>
+            <select id="adaptability" name="list" class="calculation-item-choose" required>
               <option selected disabled>Выбирите пункт...</option>
             </select>
           </li>
-            <li class="calculation-result calculation-result-border-top">
-              Сроки <span>0</span>
-            </li>
-            <li class="calculation-result">
-              Стоимость <span>0</span>
-            </li>
-          </ul>
+          <li class="calculation-result calculation-result-border-top">
+            Сроки <span>0</span>
+          </li>
+          <li class="calculation-result calculation-cost-border-top">
+            Стоимость <span>0</span>
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="section-statistics">
+    <section class="section-statistics parallax">
       <div class="container-statistics">
+        <div class="parallax__group">
+          <div class="parallax__layer parallax__layer-base">
         <h2 class="statistics-heading">
           Немного статистики
-          <span class="statistics-border-bottom"></span>
         </h2>
         <ul class="statistics-list">
           <li class="statistics-item">
@@ -225,15 +243,18 @@
             </p>
           </li>
         </ul>
+        <div class="parallax__layer parallax__layer-back">
+          </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="section-comment">
+    <section class="section-comment" id="comment">
       <div class="container-comment">
         <h2 class="comment-heading">
           Отзывы
-          <span class="comment-border-bottom"></span>
         </h2>
-        <img src="/img/photo-3.jpg" alt="photo" class="comment-img">
+        <div class="comment-img"></div>
         <p class="comment-img-description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aut omnis id quibusdam, officia amet nisi,
           architecto iure ducimus hic ab minus.
@@ -246,7 +267,7 @@
             <img src="/img/point-orange.png" alt="point-orange">
           </li>
           <li class="comment-item">
-            <img src="/img/point-grey.png" alt="point-grey"> 
+            <img src="/img/point-grey.png" alt="point-grey">
           </li>
           <li class="comment-item">
             <img src="/img/point-grey.png" alt="point-grey">
@@ -254,27 +275,32 @@
         </ul>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container-footer">
         <h2 class="footer-heading">
           Мои контакты
-          <span class="footer-border-bottom"></span>
         </h2>
         <p class="footer-heading-description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa reprehenderit ea.
         </p>
         <ul class="footer-list">
           <li class="footer-item">
-            <img src="/img/geo.png" alt="geo" class="footer-item-img">
-              <a href="#" class="footer-map-descr">Санкт-Петербург Невский проспект 11</a>
+            <a href="#" class="footer-map-descr">
+              <div class="footer-item-img footer-item-img-geo"></div>
+              Санкт-Петербург Невский проспект 11
+            </a>
           </li>
           <li class="footer-item">
-            <img src="/img/mail.png" alt="mail" class="footer-item-img">
-              <a href="mail:info@companyname.com" class="footer-mail">info@companyname.com</a>
+            <a href="mail:info@companyname.com" class="footer-mail">
+              <div class="footer-item-img footer-item-img-mail"></div>
+              info@companyname.com
+            </a>
           </li>
           <li class="footer-item">
-            <img src="/img/phone.png" alt="phone" class="footer-item-img">      
-              <a href="tel:79999999999" class="footer-tel">+7 999 999-99-99</a>     
+            <a href="tel:79999999999" class="footer-tel">
+              <div class="footer-item-img footer-item-img-phone"></div>
+              +7 999 999-99-99
+            </a>
           </li>
         </ul>
         <h3 class="footer-caption">
@@ -284,19 +310,42 @@
           <input type="text" placeholder="Имя" class="footer-input">
           <input type="text" placeholder="Email" class="footer-input">
         </div>
-          <textarea name="text" placeholder="Сообщение" cols="30" rows="1" class="footer-input-comment">
-          </textarea>
-         <div> 
-           <input type="submit" name="Отправить" class="footer-input-send">
-         </div>
-        <div class="footer-social-input">
-          <img src="/img/facebook.png" alt="" class="footer-social-img">
-          <img src="/img/twitter.png" alt="" class="footer-social-img">
-          <img src="/img/ball.png" alt="" class="footer-social-img">
-          <img src="/img/cat.png" alt="" class="footer-social-img">
-          <img src="/img/instagram.png" alt="" class="footer-social-img">
-          <img src="/img/in.png" alt="" class="footer-social-img">
+        <textarea name="text" placeholder="Сообщение" cols="30" rows="1" class="footer-input-comment"></textarea>
+        <div>
+          <input type="button" value="Отправить" class="footer-input-send">
         </div>
+        <ul class="footer-list-social-img">
+          <li class="footer-item-social-img">
+            <a href="#">
+              <div class="footer-social-img footer-social-img-facebook"></div>
+            </a>
+          </li>
+          <li class="footer-item-social-img">
+            <a href="#">
+              <div class="footer-social-img footer-social-img-twitter"></div>
+            </a>
+          </li>
+          <li class="footer-item-social-img">
+            <a href="#">
+              <div class="footer-social-img footer-social-img-ball"></div>
+            </a>
+          </li>
+          <li class="footer-item-social-img">
+            <a href="#">
+              <div class="footer-social-img footer-social-img-cat"></div>
+            </a>
+          </li>
+          <li class="footer-item-social-img">
+            <a href="#">
+              <div class="footer-social-img footer-social-img-instagram"></div>
+            </a>
+          </li>
+          <li class="footer-item-social-img">
+            <a href="#">
+              <div class="footer-social-img footer-social-img-in"></div>
+            </a>
+          </li>
+        </ul>
       </div>
       <img src="/img/map.jpg" alt="map" class="footer-map">
       <div class="footer-copyright">
@@ -306,6 +355,16 @@
       </div>
     </footer>
   </main>
+
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 
 </body>
 
